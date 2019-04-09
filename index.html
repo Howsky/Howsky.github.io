@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+  <title>Hubert Szewczuk - Web Developer</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#aboutme" class="nav__link">About Me</a>
+      </li>
+      <li class="nav__item">
+        <a href="#projects" class="nav__link">Projects</a>
+      </li>
+      <li class="nav__item">
+        <a href="#contact" class="nav__link">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section class="banner">
+
+      <div class="banner__background"></div>
+
+      <div class="banner__main">
+        <h2 class="banner__title">Need a Front End Developer?</h2>
+        <button class="button button--cta1">
+          <span class="button__inner btn--cta1" onclick="window.location.href='mailto:szewczukhubert@gmail.com'">Hire Me</span>
+        </button>
+      </div>
+
+    </section>
+    <section class="technologies">
+      <ul class="technologies__list">
+
+        <em class="icon-angular"></em>
+        <i class="icon2-ts"></i>
+        <em class="icon-js"></em>
+        <em class="icon-html5"></em>
+        <em class="icon-css3-alt"></em>
+        <em class="icon-sass"></em>
+        <em class="icon-git"></em>
+        <em class="icon-nodejs"></em>
+        <em class="icon-mongodb"></em>
+
+        <span>Angular</span>
+        <span>TypeScript</span>
+        <span>JavaScript</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>SASS</span>
+        <span>GIT</span>
+        <span>Node.js</span>
+        <span>MongoDB</span>
+
+      </ul>
+    </section>
+
+    <section class="aboutme" id="aboutme">
+      <div class="aboutme__content">
+        <div class="helper__center">
+          <div class="aboutme__introduction">
+            <div class="aboutme__photo">
+              <img src="img/av2.jpg" alt="" class="avatar">
+              <img src="img/spiderweb.svg" alt="" class="spiderweb">
+            </div>
+            <p><span>Who am I?</span> I'm <span>Hubert Szewczuk</span>, a guy whose one of the passion is coding. Unfortunately my portfolio is not that awesome as I want it to be. Maybe you could help me? Let's build something great together!</p>
+            <button class="button" onclick="window.location.href='mailto:szewczukhubert@gmail.com'">
+              <span class="button__inner btn--cta2">Contact Me</span>
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="project project--1" id="projects">
+      <div class="project__content">
+        <div>
+          <div class="project__textPart">
+            <h2>eDiary</h2>
+            <p>Simple app for keeping a journal or diary. For desktop and mobile.</p>
+            <div class="project__btns">
+              <button class="button" onclick="window.location.href='https://github.com/Howsky/ediary'">
+                <span class="button__inner btn--link">Source</span>
+              </button>
+              <button class="button">
+                <span class="button__inner btn--link" onclick="window.location.href='http://ediary.hybridapps.eu'">Live Preview</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="project__imgPart">
+          <img src="img/ediary.png" alt="ediary app" class="img--ediary">
+        </div>
+      </div>
+    </section>
+
+    <section class="project project--2">
+      <div class="project__content">
+        <div class="project__imgPart">
+          <img src="img/chatapp.png" alt="ediary app" class="img--chatapp">
+        </div>
+        <div>
+          <div class="project__textPart">
+            <h2>ChatApp</h2>
+            <p>Material based app for texting with people. Mobile version only</p>
+            <div class="project__btns">
+              <button class="button" onclick="window.location.href='https://github.com/Howsky/chatapp'">
+                <span class="button__inner btn--link">Source</span>
+              </button>
+              <button class="button">
+                <span class="button__inner btn--link" onclick="window.location.href='http://chatapp.hybridapps.eu'">Live Preview</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+
+      <form class="contactForm" action="https://formspree.io/szewczukhubert@gmail.com" method="POST">
+        <label>Full Name<input required type="text" name="name"></label>
+        <label>Email<input required type="email" name="email"></label>
+        <label>Phone<input type="tel" name="phone"></label>
+        <label class="contactForm__message">Message<textarea name="message" rows="8"></textarea></label>
+        <button class="button" type="submit"">
+          <span class=" button__inner btn--link">Send it</span>
+        </button>
+      </form>
+
+    </section>
+  </main>
+
+  <footer>
+    <p class="copywrite">Copyright 2018 &copy; by Hubert Szewczuk</p>
+  </footer>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/smoothScroll.js"></script>
+
+</html>
